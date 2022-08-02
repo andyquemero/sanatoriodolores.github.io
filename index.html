@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registro Salud</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<h1>Sanitario Dolores de Cabeza</h1>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h3>Pacientes :)</h3>
+			<section id="sectionFiltro">
+				<label for="filtro-tabla" id="filtro-etiqueta"><p>Filtro = </p></label>
+				<input type="text" name="filtro" id="filtro-tabla" placeholder="ingrese nombre paciente">
+			</section>
+			<table>
+				<thead>
+					<tr class="marco">
+						<th>Nombre Apellido</th>
+						<th>Altura (cm)</th>
+						<th>Peso (kg)</th>
+						<th>Grasa (%)</th>
+						<th>I.M.C.</th>
+					</tr>
+				</thead>
+				<tbody class="tablaPacientes">
+					<tr class="pacienteInfo">
+						<td class="pNombre">Juanito Perez</td>
+						<td class="pAltura">175</td>
+						<td class="pPeso">60</td>
+						<td class="pGrasa">15</td>
+						<td class="pIMC"></td>					
+					</tr>
+					<tr class="pacienteInfo">
+						<td class="pNombre">Dora Explorer</td>
+						<td class="pAltura">130</td>
+						<td class="pPeso">40</td>
+						<td class="pGrasa">20</td>
+						<td class="pIMC"></td>
+					</tr>
+					<tr class="pacienteInfo">
+						<td class="pNombre">Andres Acosta</td>
+						<td class="pAltura">185</td>
+						<td class="pPeso">90</td>
+						<td class="pGrasa">25</td>
+						<td class="pIMC"></td>
+					</tr>
+					<tr class="pacienteInfo">
+						<td class="pNombre">Sony Rap</td>
+						<td class="pAltura">190</td>
+						<td class="pPeso">150</td>
+						<td class="pGrasa">40</td>
+						<td class="pIMC"></td>
+					</tr>	
+				</tbody>	
+			</table>
+
+
+			<div class="buscarBD">
+				
+				<span id="error" class="invisible" style="color:red">
+						error en base de datos de pacientes
+				</span>
+
+				<button id="buscar-paciente" class="boton bto-principal">buscar pacientes</button>
+			</div>
+
+		</section>
+
+
+	<section class="container">
+    	<h2 id="titulo-form">Adicionar nuevo paciente</h2>
+    	<form id="formAdicionar">
+        	<div class="grupo">
+            	<label for="nombre">Nombre:</label>
+            	<input id="nombre" type="text" placeholder="Nombre completo" class="campo">
+        	</div>
+        	<div class="grupo">
+            	<label for="peso">Peso:</label>
+            	<input id="peso" type="text" placeholder="peso en Kg" class="campo campo-medio">
+        	</div>
+        	<div class="grupo">
+            	<label for="altura">Altura:</label>
+            	<input id="altura" type="text" placeholder="altura en Cm" class="campo campo-medio">
+        	</div>
+        	<div class="grupo">
+            	<label for="gordura">% de Gordura:</label>
+            	<input id="gordura" type="text" placeholder="gordura en porcentaje %" class="campo campo-medio">
+        	</div>
+        	<button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
+    	</form>
+	</section>
+
+
+
+
+
+
+	</main>
+	<footer>
+		<p>DOBLE CLICK EN ALGUN PACIENTE HARA QUE EL MISMO SE ELIMINE</p>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="form.js"></script>
+	<script type="text/javascript" src="eliminar.js"></script>
+	<script type="text/javascript" src="filtro.js"></script>
+	<script type="text/javascript" src="buscar.js"></script>
+</body>
+</html>
+
